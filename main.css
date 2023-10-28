@@ -1,0 +1,124 @@
+*:hover{
+    cursor: default;
+    user-select: none;
+    transition: all 1s ease-out;
+    transform: translateX(0px);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: no-repeat;
+    background-image: url(assets/img/background.jpg);
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    background-color: #feffea;
+    
+    animation: pageLoad ease-out 1.5s 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    transition: background-color 1.5s ease-out 1.5s !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#container h1{
+    width: 50%;
+
+    animation: titleAppear ease-out 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-2000px);
+
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: #00000050 5px 5px 5px;
+
+    background: -webkit-linear-gradient(-45deg, #169A25, #254441, #E21616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#container h3{
+    animation: subtitleAppear ease-out 1s .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(2000px);
+
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 40px;
+    color: #254441;
+}
+
+a{
+    border-radius: 100px;
+    background-color: #feffea00;
+
+    width: 0%;
+    height: 0%;
+    margin-top: 50px;
+
+    animation: buttonAppear ease-out .5s 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    transition: all 1s ease-in-out;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    width: 50%;
+    height: auto;
+    color: #254441;
+}
+
+a:hover, svg:hover, path:hover{
+    cursor: pointer;
+}
+
+#transition-frame{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #feffea00;
+    transition: all ease-in .7s .5s;
+    pointer-events: none;
+}
+
+/* Probably a better way to do this but it works =) */
+
+.Bdisappear{
+    width: 40px;
+    height: 40px;
+    background-color: #feffea;
+
+    animation: buttonDisappear ease-in-out 1s .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

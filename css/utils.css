@@ -1,0 +1,21 @@
+/* This is where all fonts and other css assets should be */
+
+@font-face {
+    font-family: "Agbalumo";
+    src: url(../assets/fonts/Agbalumo/Agbalumo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Italianno";
+    src: url(../assets/fonts/Italianno/Italianno-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playpen Sans";
+    src: url(../assets/fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
