@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    display: flex;
+    flex: 1 ;
+    border: black;
+    background-color: bisque;
+    width: 100%;
+}
+
+#test{
+    flex: 9;
+}
