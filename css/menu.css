@@ -9,10 +9,90 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    background-color: var(--iwhite);
+
+    overflow: hidden;
 }
 
 header{
     width: 100%;
-    height: 15%;
-    background-color: black;
+    height: 20%;
+}
+
+header h1{
+    width: 100%;
+
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+
+    -webkit-text-stroke: .001px;
+    -webkit-text-stroke-color: var(--igrey);
+    -webkit-text-fill-color: transparent;
+}
+
+#menu-container{
+    width: 80%;
+    height: 80%;
+
+    background-color: rgb(240, 240, 240);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 5px;
+    border-radius: 25px;
+}
+
+#categories{
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#navbar-example3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-8{
+    height: 100%;
+}
+
+.nav-link{
+    color: var(--igrey);
+    font-family: "Playpen Sans";
+    font-weight: bold;
+    transform: translateX(-20px);
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: var(--igreen);
+}
+
+#content{
+    width: 70%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 20px;
+
+    overflow: scroll;
+}
+
+#content .card{
+    width: 20%;
+    height: 200px;
 }
