@@ -19,3 +19,10 @@
     font-family: "Poppins";
     src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
 }
+
+:root{
+    --igreen: #169A25;
+    --ired: #E21616;
+    --igrey: #254441;
+    --iwhite: #feffea;
+}

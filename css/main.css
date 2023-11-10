@@ -14,7 +14,7 @@ html, body{
 
 body {
     background: no-repeat;
-    background-image: url(assets/img/background.jpg);
+    background-image: url(../assets/img/background.jpg);
     background-size: 100% 100%;
 
     display: flex;
