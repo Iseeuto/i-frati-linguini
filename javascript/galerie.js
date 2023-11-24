@@ -20,8 +20,7 @@ function ChangeIndex(dir){
 }
 
 function ActualizeImage(){
-    console.log(currentImg, images.indexOf(currentImg))
-    if(images.indexOf(currentImg) >= 3){carrousel.style.backgroundImage = currentImg;}
+    if(images.indexOf(currentImg) >= 3){carrousel.style.backgroundImage = `url(${currentImg})`;}
     else{carrousel.style.backgroundImage = `url(../assets/img/carrousel/${currentImg})`;}
 }
 
@@ -42,7 +41,6 @@ Bnext.addEventListener("click", ()=>{
 });
 
 Bsubmit.addEventListener("click", ()=>{
-    console.log(imgFile.value);
-    AddImage(toString(imgFile.value));
+    AddImage(imgFile.value);
     imgFile.value = "";
 });
