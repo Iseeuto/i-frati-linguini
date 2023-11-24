@@ -6,11 +6,42 @@ body {
 #header{
     display: flex;
     flex: 1 ;
-    border: black;
-    background-color: bisque;
+    border: solid black;
+    background-color: var(--iwhite);
     width: 100%;
 }
 
-#test{
+#corps{
     flex: 9;
+    display: flex;
+    flex-direction: column;
 }
+
+#Mario , #Restaurant, #last {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+
+.texte{
+    flex: 3;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin: 25px;
+}
+
+.espace {
+    flex: 7;
+}
+
+#Mario , #last {
+    background-color: grey;
+}
+
+#Restaurant {
+    background-color: rgb(41, 37, 37);
+}
+
