@@ -12,87 +12,102 @@ body{
     align-items: center;
 
     background-color: var(--iwhite);
+}
 
-    overflow: hidden;
+#pop-up{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+
+    display: none;
 }
 
 header{
     width: 100%;
     height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+     var(--igreen) 0%, var(--igreen) 33.3%,
+     var(--iwhite) 33.3%, var(--iwhite) 66.6%,
+     var(--ired) 66.6%, var(--ired) 99.9%
+);
 }
 
 header h1{
-    width: 100%;
-
     font-family: "Italianno";
     font-weight: 600;
-    font-size: 80px;
+    font-size: 65px;
     text-align: center;
-
-    -webkit-text-stroke: .001px;
-    -webkit-text-stroke-color: var(--igrey);
-    -webkit-text-fill-color: transparent;
+    text-shadow: #00000050 5px 5px 5px;
 }
 
 #menu-container{
-    width: 80%;
+    width: 100%;
     height: 80%;
 
-    background-color: rgb(240, 240, 240);
+    background-color: var(--igrey);
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    border: solid 5px;
-    border-radius: 25px;
 }
 
-#categories{
-    width: 20%;
-    height: 100%;
+#menu{
+    width: 60%;
+    height: 80%;
 
-    display: flex;
-    align-items: center;
-}
-
-#navbar-example3{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    background-color: var(--iwhite);
+
+    border: solid 5px var(--iwhite);
+    border-radius: 15px;
+}
+
+#menu nav{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+
+    border-bottom: solid 5px var(--igrey);
+}
+
+#menu nav li{
+    width: 25%;
+    height: 100%;
+
+    font-family: "Agbalumo";
+    font-size: 15px;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all .6s;
 }
 
-.col-8{
-    height: 100%;
+#menu nav li:hover{
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
 }
 
-.nav-link{
-    color: var(--igrey);
-    font-family: "Playpen Sans";
-    font-weight: bold;
-    transform: translateX(-20px);
-}
+#card-container{
+    width: 99%;
+    height: 94%;
 
-.nav-link:hover, .nav-link:focus{
-    color: var(--igreen);
-}
-
-#content{
-    width: 70%;
-    height: 90%;
+    border-radius: 15px;
 
     display: grid;
-    
-    background-color: white;
-    border-radius: 20px;
-
-    overflow: scroll;
-}
-
-#content .card{
-    width: 15%;
-    height: 10px;
-    margin: 20px;
 }
