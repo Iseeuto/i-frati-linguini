@@ -1,28 +1,34 @@
 {
-    "aperitif" : {
+    "aperitifs" : {
         "Cocktail Molotov" : {
             "description" : "Ça brûle, genre fort.",
             "composition" : "Vodka, Rhum, Whisky, Sirop de grenadine et sauce du chef + feu",
+            "img": "assets/img/pates.jfif",
             "vegan" : false
         },
         "Champagno" : {
             "description" : "La recetta raffinado di papa de luigi",
             "composition" : "Champagne (5%), Suze (95%)",
+            "img": "assets/img/pates.jfif",
             "vegan" : true
         },
         "Le Linguini" : {
             "description" : "La recetta de la casa originale",
             "composition" : "Sirop de grenadine, Eau",
+            "img": "assets/img/pates.jfif",
             "vegan" : true
         }
     },
-    "entree" : {
+    "plats" : { 
+        "Pasta Posti" : {
+            "description" : "Les pates basiques de l'Italia",
+            "composition" : "Pates",
+            "img": "assets/img/pates.jfif",
+            "vegan" : false
+        }
 
     },
-    "plat" : {
-
-    },
-    "dessert" : {
+    "desserts" : {
 
     }
 }
