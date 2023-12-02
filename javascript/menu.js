@@ -1,7 +1,7 @@
 import data from '../menu.json' assert {type : 'json'};
 
 // Il y a beaucoup de choses pas optimisées DUTOUT mais pour ma défense j'ai jamais 
-// fait de JavaScript ou pas beaucoup.
+// fait de JavaScript.
 
 const card_container = document.getElementById("card-container");
 const menu = document.getElementById("filtres");
@@ -58,6 +58,7 @@ function CreateElt(name, desc, ingr, img, vegan){
 
 function OpenCard(name, desc, ingr, img, vegan){
     hider.style.display = "flex";
+    card.style.display = "flex";
 
     card.children[0].setAttribute("src", img);
     card.children[1].innerHTML = name;
@@ -69,4 +70,5 @@ function OpenCard(name, desc, ingr, img, vegan){
 
 function CloseCard(){
     hider.style.display = "none";
+    card.style.display = "none";
 }
