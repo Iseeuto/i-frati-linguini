@@ -50,7 +50,7 @@ function CreateEvents(){
 
 function CreateElt(name, desc, ingr, img, vegan){
     card_container.innerHTML += `
-    <div class="card" name="${name}" desc="${desc} ingr="${ingr}" img="${img}" vegan="${vegan}">
+    <div class="card" name="${name}" desc="${desc}" ingr="${ingr}" img="${img}" vegan="${vegan}">
         <img src="${img}">
         <h3>${name}</h3>
     </div>`
@@ -58,10 +58,6 @@ function CreateElt(name, desc, ingr, img, vegan){
 
 function OpenCard(name, desc, ingr, img, vegan){
     hider.style.display = "flex";
-
-    for(let child of card.children){
-        console.log(child);
-    }
 
     card.children[0].setAttribute("src", img);
     card.children[1].innerHTML = name;

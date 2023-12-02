@@ -20,14 +20,14 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.678);
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
 #display-card{
-    height: 60%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
 
     background-color: white;
     border-radius: 20px;
@@ -74,6 +74,8 @@ body{
 
     width: 100%;
     height: 40%;
+
+    font-family: "Playpen Sans";
 }
 
 header{
@@ -120,7 +122,7 @@ header h1{
 
     background-color: var(--iwhite);
 
-    border: solid 5px var(--iwhite);
+    /*border: solid 5px var(--iwhite);*/
     border-radius: 15px;
 }
 
@@ -144,6 +146,7 @@ header h1{
     font-family: "Poppins";
     font-weight: bold;
     font-size: 15px;
+    text-transform: uppercase;
     
     display: flex;
     justify-content: center;
@@ -153,8 +156,6 @@ header h1{
 }
 
 #menu nav li:hover{
-    font-size: 18px;
-    font-weight: 800;
     cursor: pointer;
 }
 
@@ -194,32 +195,26 @@ header h1{
 }
 
 .card:hover{
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px var(--igrey);
     cursor: pointer;
 }
 
 .card img{
-    height: 60%;
+    height: 50%;
     width: 100%;
 
     object-fit: cover;
-    border-radius: 15px;
-}
-
-.card div{
-    height: 40%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .card h3{
-    height: 25%;
+    height: 50%;
         
     font-family: "Poppins";
     font-size: 15px;
     text-align: center;
     color: var(--igrey);
+
+    user-select: none;
 }
