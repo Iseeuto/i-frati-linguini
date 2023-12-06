@@ -7,4 +7,8 @@ get.addEventListener('click', e => {
 
     var transitionFrame = document.getElementById("transition-frame");
     transitionFrame.style.backgroundColor = "#feffea";
+    
+    setTimeout(() => {
+        window.location = "presentation.html"
+    }, 3000);
 })

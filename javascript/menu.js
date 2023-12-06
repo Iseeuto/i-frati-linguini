@@ -15,7 +15,7 @@ for(let i = 0; i<menu.children.length; i++){
         ChangeFilter(menu.children[i].getAttribute("filter"));
     })
 }
-ChangeFilter("all");
+ChangeFilter("aperitifs");
 
 function ChangeFilter(filter){
     card_container.innerHTML = "";
@@ -60,11 +60,11 @@ function OpenCard(name, desc, ingr, img, vegan){
     hider.style.display = "flex";
     card.style.display = "flex";
 
-    card.children[0].setAttribute("src", img);
-    card.children[1].innerHTML = name;
-    if (vegan){card.children[1].innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16"> <circle cx="8" cy="8" r="8"/> </svg>`}
-    card.children[2].innerHTML = desc;
-    card.children[3].innerHTML = ingr;
+    card.children[1].children[0].setAttribute("src", img);
+    card.children[1].children[0].innerHTML = name;
+    if (vegan){card.children[1].children[0].innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16"> <circle cx="8" cy="8" r="8"/> </svg>`}
+    card.children[1].children[1].innerHTML = desc;
+    card.children[1].children[2].innerHTML = ingr;
 
 }
 

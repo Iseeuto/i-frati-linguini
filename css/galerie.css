@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: var(--iwhite);
+    background-color: var(--igrey);
 }
 
 header{
@@ -46,6 +46,7 @@ header h1{
     height: 5%;
     
     font-family: "Playpen Sans";
+    color: var(--iwhite);
 }
 
 #carrousel{
@@ -109,3 +110,5 @@ header h1{
     align-items: center;
     justify-content: center;
 }
+
+/*TODO: Style inputs*/

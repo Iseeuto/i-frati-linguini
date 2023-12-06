@@ -14,17 +14,6 @@ body{
     background-color: var(--iwhite);
 }
 
-#pop-up{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.678);
-
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
 #display-card{
     height: 40%;
     width: 30%;
@@ -46,59 +35,47 @@ body{
     border-top-right-radius: 20px;
 }
 
-#display-card h1{
+#text {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#text h1{
+    margin: 0;
     margin-left: 15px;
 
     width: 100%;
-    height: 10%;
 
     font-family: "Poppins";
 }
 
-#display-card svg{
+#text h1 svg{
     color: var(--igreen);
     margin-left: 15px;
 }
 
-#display-card h4{
+#text h4{
+    margin: 0;
     margin-left: 15px;
 
     width: 100%;
-    height: 20%;
 
     font-family: "Playpen Sans";
 }
 
-#display-card p{
+#text p{
+    margin: 0;
     margin-left: 15px;
+    margin-top: 25px;
 
     width: 100%;
-    height: 40%;
 
     font-family: "Playpen Sans";
-}
-
-header{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient(90deg,
-     var(--igreen) 0%, var(--igreen) 33.3%,
-     var(--iwhite) 33.3%, var(--iwhite) 66.6%,
-     var(--ired) 66.6%, var(--ired) 99.9%
-);
-}
-
-header h1{
-    font-family: "Italianno";
-    font-weight: 600;
-    font-size: 65px;
-    text-align: center;
-    text-shadow: #00000050 5px 5px 5px;
-    user-select: none;
 }
 
 #menu-container{
