@@ -1,0 +1,134 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--iwhite);
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+     var(--igreen) 0%, var(--igreen) 33.3%,
+     var(--iwhite) 33.3%, var(--iwhite) 66.6%,
+     var(--ired) 66.6%, var(--ired) 99.9%
+);
+}
+
+header h1{
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: #00000050 5px 5px 5px;
+}
+
+
+#contact-container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 80%;
+
+
+    background-color: var(--igrey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contact{
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--iwhite);
+
+    border: solid 5px var(--iwhite);
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    font-family: 'Poppins';
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+svg {
+    width: 100px;
+    height: auto;
+}
+
+#titre2{
+    font-size: 25px;
+    justify-content: left;
+    margin-left: 150px;
+}
+
+#titre1{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#nues{
+    color: var(--igreen);
+    
+}
+
+#tra_fami{
+    color: var(--iwhite);
+}
+
+#glia{
+    color: var(--ired);
+}
+
+#Nuestra_Famiglia{
+    display: flex;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#coordonne{
+    display: flex;
+    align-items: center;
+}
+
+
+#line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 25%;
+    border:  solid black 2px;
+}
+
+#social{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#info{
+    justify-content:normal ;
+}

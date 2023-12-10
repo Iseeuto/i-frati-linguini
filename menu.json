@@ -3,32 +3,79 @@
         "Cocktail Molotov" : {
             "description" : "Ça brûle, genre fort.",
             "composition" : "Vodka, Rhum, Whisky, Sirop de grenadine et sauce du chef + feu",
-            "img": "assets/img/pates.jfif",
+            "img": "assets/img/menu/aperitifs/molotov.jpg",
             "vegan" : false
         },
         "Champagno" : {
             "description" : "La recetta raffinado di papa de luigi",
             "composition" : "Champagne (5%), Suze (95%)",
-            "img": "assets/img/pates.jfif",
+            "img": "assets/img/menu/aperitifs/champagne.png",
             "vegan" : true
         },
         "Le Linguini" : {
             "description" : "La recetta de la casa originale",
             "composition" : "Sirop de grenadine, Eau",
-            "img": "assets/img/pates.jfif",
+            "img": "assets/img/menu/aperitifs/linguini.jpg",
+            "vegan" : true
+        },
+        "Ricardo" : {
+            "description" : "Ouai parce que ça vient de chez nous en fait.",
+            "composition" : "Ricardo, eau",
+            "img": "assets/img/menu/aperitifs/ricardo.jpeg",
             "vegan" : true
         }
     },
     "plats" : { 
         "Pasta Posti" : {
             "description" : "Les pates basiques de l'Italia",
-            "composition" : "Pates",
-            "img": "assets/img/pates.jfif",
+            "composition" : "Pâtes, sauce tomate, herbes",
+            "img": "assets/img/menu/plats/pates.jfif",
             "vegan" : false
+        },
+        "Lasagna Italia" : {
+            "description" : "Les vraies lasagnes de l'Italie",
+            "composition" : "Sauce tomate, pâtes, basilic, boeuf, herbes diverses",
+            "img" : "assets/img/menu/plats/lasagne.jpg",
+            "vegan" : false
+        },
+        "El Famoso Pizza" : {
+            "description" : "La pizza de la Mama #MisterV tmtc",
+            "composition" : "Sauce tomate, anchois, champignons, crampté, fromage, gazon",
+            "img" : "assets/img/menu/plats/pizza.jpg",
+            "vegan" : false
+        },
+        "Salado" : {
+            "description" : "Le plât far des Frati Linguini",
+            "composition" : "Salade",
+            "img" : "assets/img/menu/plats/salade.jpg",
+            "vegan" : true
         }
 
     },
     "desserts" : {
-
+        "Tiramisute" : {
+            "description" : "Délice sucré",
+            "composition" : "Crème, biscuit, sucre glace, café",
+            "img" : "assets/img/menu/desserts/tiramisu.jpg",
+            "vegan" : false
+        },
+        "Pani Coti" : {
+            "description" : "Le dessert préféré de Leonardo Da Vinci",
+            "composition" : "Vanille gélatinisée (vegan), coulis fraise",
+            "img" : "assets/img/menu/desserts/panacota.webp",
+            "vegan" : true
+        },
+        "Cafani" : {
+            "description" : "Pour les gourmants !",
+            "composition" : "Café, chocolat chaud, macarons chocolat",
+            "img" : "assets/img/menu/desserts/cafe.jpg",
+            "vegan" : true
+        },
+        "Pizza chocolati" : {
+            "description" : "El classico",
+            "composition" : "Pâte, nutella, sucre glace",
+            "img" : "assets/img/menu/desserts/pizza.webp",
+            "vegan" : false
+        }
     }
 }
